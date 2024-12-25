@@ -5,10 +5,15 @@ body {
     justify-content: center;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 #full {
     width: 70vw;
     height: auto;
-    /* margin: auto; */
+    margin: auto;
     padding: 10% 0% 10% 0%;
     background-color: #87CEEB;
     border: 2px solid red;
@@ -27,8 +32,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#error,
-#lap-data {
+#error{
     text-align: center;
     font-weight: bolder;
     color: rgb(76, 0, 255);
@@ -61,10 +65,12 @@ button:hover {
 }
 
 #lap-data {
-    width: 10vw;
-    position: absolute;
+    width: 40vw;
+    margin: 2vmax auto auto auto;
     right: 2%;
     background-color: #87CEEB;
-    font-size: medium;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
     box-shadow: 1px 1px 20px 10px red;
 }
